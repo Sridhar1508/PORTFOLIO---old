@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+.whole{
+    width: auto;
+    overflow: auto;
+    line-height: 20px;
+    background-color:lightslategray ;
+    font-family: 'Poppins:ital';
+    position: relative;
+}
+
+/* 
+        NAVIG 
+*/
+
+
+.whole nav{
+    margin-left:25% ;
+    float: left;
+    
+}
+.whole div{
+    margin-right: 20%;
+    margin-top: 30px;
+    margin-left: 20px;
+    float: right;
+    position: relative;
+}
+nav .navig{
+    display: inline-flex;
+    padding: 5px;
+    margin: 5px 100px;
+    list-style: none;
+    transform: skew(-25deg);
+}
+nav .navig li{
+    background-color: black;
+    float:left;
+    border-right: 1px solid yellow;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0,0,0,1);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500px;
+    transition: all 0.2s linear;
+}
+nav .navig li:hover{
+    background-color: gold;
+    color: black;
+}
+.navig li a{
+    color: inherit;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    transform: skew(25deg);
+}
+nav .navig li:first-child{
+    border-radius: 7px 0 0 7px;
+}
+nav .navig li:last-child{
+    border-radius: 0 7px 7px 0;
+}
+
+/* 
+        SOCIAL 
+*/
+
+.whole div{
+    float: right;
+}
+div ul{
+    display: flex;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+div ul li{
+    list-style: none;
+    margin: 5px;
+}
+div ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #171515;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #fff;
+    transition: .5s;
+}
+div ul li a:before{
+    content: '';
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background:#d35400;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+div ul li a:hover:before{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #d35400;
+    filter: blur(2px);
+}
+div ul li .fa-facebook:hover{
+    color: blue;
+    /* box-shadow: 0 0 15px #d35400; */
+}
+div ul li .fa-instagram:hover{
+    color:orange;
+    box-shadow: 0 0 15px green;
+}
+div ul li .fa-github:hover{
+    color: white;
+    box-shadow: 0 0 15px #d35400;
+}
+div ul li .fa-youtube:hover{
+    color: red;
+    box-shadow: 0 0 15px #d35400;
+}
+
+/*
+    SRIDHAR TEXT
+*/
+
+.home{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.home video{
+    width: 100%;
+    height: 100%;
+}
+.text-box{
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size:70px;
+    font-weight: 700;
+    mix-blend-mode: multiply;
+}
+
+/*   
+        typing text  
+*/
+
+.home .containers{
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 10vh;
+    background: black;
+    justify-content: center;
+    margin-top: 450px;
+    display: flex;
+    padding-left: 4px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.containers{
+    width: 246px;
+    overflow: hidden;
+}
+.containers .text{
+    position: absolute;
+    color: blue;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-right: 270px;
+}
+.containers .text.first-text{
+    color:red ;
+    position: absolute;
+}
+.text.sec-text:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid yellow;
+    animation: animate 4s steps(12) infinite;
+
+}
+@keyframes animate{
+    40%,60%{
+        left:calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+/*   
+        ABOUT ME
+*/
+
+
+.third{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    color:blue ;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 350px;
+    height: 80vh;
+    position: relative;
+    background: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    /* padding: 20px; */
+    transition: all .3s ease-in;
+}
+.card > *{
+    padding: 0px;
+}
+.card .card-image{
+    height: 150px;
+    width: 150px;
+    border: 5px double #022a3c;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;    
+}
+.card .card-title{
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #415426;
+}
+.card:nth-child(1) .card-image{
+    background-image: url(im1.png);
+}
+.card:nth-child(2) .card-image{
+    background-image: url(rmkcet-logo.png);
+}
+.card:nth-child(3) .card-image{
+    background-image: url(image4.jpg);
+}
+.card:hover{
+    background:white;
+    color: black;
+    box-shadow: 0px 0px 11px 5px #000000;
+}
+.card .card-text{
+    line-height: 20px;
+    font-size: 200;
+}
+.card .card-text .button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+.card .button{
+    position: relative;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 30px;
+    color: black;
+    font-family: poppins,sans-serif;
+    font-weight: 900;
+    border: 5px solid black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+
+}
+.card .button .fa-github{
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 10px;
+    margin-left: 55px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.card .button:hover{
+    box-shadow:  0 5px 50px 0 red inset, 0 5px 50px 0 red,
+    0 5px 50px 0 red inset, 0 5px 20px 0 red;
+}
+
+/*
+        TECHNICAL SKILLS
+*/
+
+.box{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box h1{
+    color: gold;
+    justify-content: center;
+    position: absolute;
+    padding-bottom: 480px;
+}
+
+/* 
+        TECHNICAL SKILLS
+*/
+
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.progress-bar{
+    background: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background:black;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .c{
+    background: #291e63;
+    animation: c 3s linear forwards;
+}
+.box .java{
+    background: red;
+    animation: java 3s linear forwards;
+}
+.box .python{
+    background: yellow;
+    animation: python 3s linear forwards;
+}
+.box .cpp{
+    background: green;
+    animation: cpp 3s linear forwards;
+}
+.box .html{
+    background: mediumvioletred;
+    animation: html 3s linear forwards;
+}
+.box .c span{
+    border: 1px solid #291e63;
+}
+.box .java span{
+    border: 1px solid red;
+}
+.box .python span{
+    border: 1px solid yellow;
+}
+.box .cpp span{
+    border: 1px solid green;
+}
+.box .html span{
+    border: 1px solid mediumvioletred;
+}
+
+@keyframes c{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes java{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes python{
+    100%{
+        width: 55%;
+    }
+}
+@keyframes cpp{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes html{
+    100%{
+        width: 85%;
+    }
+}
+.techi{
+    /* transform: translate(50%,-50%); */
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 200;
+    font-size: 50px;
+    color: gold;
+    text-shadow: 1px 1px 1px red,
+    1px 2px 1px red,
+    1px 3px 1px red,
+    1px 4px 1px red,
+    1px 5px 1px red,
+    1px 6px 1px red,
+    1px 7px 1px red,
+    1px 8px 1px red,
+    1px 10px 1px red,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 23px 10px rgba(16,16,16,0.2),
+    1px 26px 25px rgba(16,16,16,0.2),
+    1px 32px 30px rgba(16,16,16,0.1),
+    1px 40px 50px rgba(16,16,16,0.4);
+}
+
+/* 
+        NON-TECHNICAL SKILLS
+*/
+
+.bodyy{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+.bodyy h1{
+    color: gold;
+    position: absolute;
+    margin-bottom: 45%;
+    margin-top: 60px ;
+    margin-left: 490px;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 200;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px red,
+    1px 2px 1px red,
+    1px 3px 1px red,
+    1px 4px 1px red,
+    1px 5px 1px red,
+    1px 6px 1px red,
+    1px 7px 1px red,
+    1px 8px 1px red,
+    1px 10px 1px red,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 23px 10px rgba(16,16,16,0.2),
+    1px 26px 25px rgba(16,16,16,0.2),
+    1px 32px 30px rgba(16,16,16,0.1),
+    1px 40px 50px rgba(16,16,16,0.4);
+}
+.cont{
+    position: relative;
+    margin-left: 150px;
+    margin-top: 60px;
+    width: 1200px;
+    display: flex;
+    /* padding: 30px; */
+    justify-content: space-around;
+    background: blue;
+    border-radius: 5px;
+}
+.cont .cardd{
+    position: relative;
+    width: 400px;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.cont .cardd:hover{
+    transform: translate(-10px);
+    box-shadow:  0 15px 35px rgba(0,0,0,0.5);
+}
+.cont .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.03);
+    pointer-events: none;
+    z-index: 5;
+}
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px black;
+    background: #222;
+    z-index: 1000;
+}
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.percent .number h2{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.cardd:hover .percent .number h2{
+    color: gold;
+    font-size: 60px;
+}
+.percent .number h2 span{
+    font-size: 30px;
+    color:white ;
+    transition: 0.5s;
+}
+.cardd:hover .percent .number h2 span{
+    color: gold;
+}
+.text{
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* justify-content: center; */
+    padding-top: 20px;
+    transition: 0.5s;
+}
+.cardd:hover .text{
+    color: gold;
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width:10 ;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.cardd:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440*90)/100);
+    stroke: #00ff43;
+}
+.cardd:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440*85)/100);
+    stroke: #f02435;
+}
+.cardd:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440*70)/100);
+    stroke: #ff04f7;
+}
+.cardd:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440*95)/100);
+    stroke: #05c5fa;
+}
+
+/* 
+    contact inf0
+*/
+
+.contactt{
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+    background: black;
+    width: 100%;
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.contactt h1{
+    color: gold;
+    position: absolute;
+    margin-bottom: 280px;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 200;
+    font-size: 50px;
+    color: gold;
+    text-shadow: 1px 1px 1px red,
+    1px 2px 1px red,
+    1px 3px 1px red,
+    1px 4px 1px red,
+    1px 5px 1px red,
+    1px 6px 1px red,
+    1px 7px 1px red,
+    1px 8px 1px red,
+    1px 10px 1px red,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 23px 10px rgba(16,16,16,0.2),
+    1px 26px 25px rgba(16,16,16,0.2),
+    1px 32px 30px rgba(16,16,16,0.1),
+    1px 40px 50px rgba(16,16,16,0.4);
+}
+.contact-info a{
+    display: flex;
+    /* position: absolute; */
+    width: 100%;
+    height: 10vh;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.con-card{
+    background: black;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: 55%;
+    height: 150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+}
+.card-icon{
+    font-size: 28px;
+    background: #ff6348;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+.con-card:hover .card-icon{
+    background: none;
+    color: lawngreen;
+    transform: scale(1.6);
+}
+.con-card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+    color: #ff04f7;
+}
+.con-card:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+.contactt h5{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+@media screen and (max-width:800px){
+    .contact-info a{
+        flex-direction: column;
+    }
+    .con-card{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
